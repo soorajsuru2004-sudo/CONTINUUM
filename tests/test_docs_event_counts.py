@@ -50,6 +50,11 @@ _FIGURE_RES = {
     "event types (N)": re.compile(r"event types\s*\((\d+)\)", re.IGNORECASE),
     "hash-chained, N types": re.compile(r"hash-chained,\s*(\d+)\s+types"),
     "svg text": re.compile(r">\s*(\d+)\s+event types\s*<"),
+    # Translated READMEs: es/pt-BR and ja/zh-CN state the count in their own
+    # wording, and they drifted to 36/44 while the English README said 51.
+    "N tipos de eventos": re.compile(r"(\d+)\s+tipos\s+de\s+eventos", re.IGNORECASE),
+    "N 種のイベントタイプ": re.compile(r"(\d+)\s+種のイベントタイプ"),
+    "N 种事件类型": re.compile(r"(\d+)\s+种事件类型"),
 }
 
 # region (start marker, stop marker) -> the exhaustive name lists, in the order
